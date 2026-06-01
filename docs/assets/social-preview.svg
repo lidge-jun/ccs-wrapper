@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="CCS Thinking Wrapper preview">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#ffffff" stroke="#dbe3ef"/>
+  <text x="124" y="140" font-family="Inter, Arial, sans-serif" font-size="24" fill="#b45309" font-weight="800" letter-spacing="5">CCS THINKING WRAPPER</text>
+  <text x="124" y="214" font-family="Inter, Arial, sans-serif" font-size="54" fill="#111827" font-weight="850">Model routing in front of CCS.</text>
+  <text x="124" y="272" font-family="Inter, Arial, sans-serif" font-size="26" fill="#475569">Claude Code, Copilot BYOK, thinking injection, and Codex effort suffixes.</text>
+  <g transform="translate(124 344)">
+    <rect width="220" height="90" rx="18" fill="#fffbeb" stroke="#fde68a"/>
+    <text x="24" y="38" font-family="Inter, Arial, sans-serif" font-size="18" fill="#64748b">wrapper</text>
+    <text x="24" y="68" font-family="Inter, Arial, sans-serif" font-size="25" fill="#111827" font-weight="800">:8318</text>
+  </g>
+  <g transform="translate(370 344)">
+    <rect width="220" height="90" rx="18" fill="#f8fafc" stroke="#dbe3ef"/>
+    <text x="24" y="38" font-family="Inter, Arial, sans-serif" font-size="18" fill="#64748b">upstream</text>
+    <text x="24" y="68" font-family="Inter, Arial, sans-serif" font-size="25" fill="#111827" font-weight="800">CCS :8317</text>
+  </g>
+  <g transform="translate(616 344)">
+    <rect width="220" height="90" rx="18" fill="#f8fafc" stroke="#dbe3ef"/>
+    <text x="24" y="38" font-family="Inter, Arial, sans-serif" font-size="18" fill="#64748b">routes</text>
+    <text x="24" y="68" font-family="Inter, Arial, sans-serif" font-size="25" fill="#111827" font-weight="800">3 paths</text>
+  </g>
+  <g transform="translate(888 132)">
+    <rect width="150" height="150" rx="24" fill="#111827"/>
+    <path d="M924 181h42v18h-24v18h24v18h-42v-54ZM982 181h23v36h-13v18h-19v-18h9v-36Z" fill="#ffffff"/>
+    <path d="M1003 235h-22v-18h22v18Z" fill="#f59e0b"/>
+  </g>
+  <text x="124" y="504" font-family="Inter, Arial, sans-serif" font-size="22" fill="#64748b">Health checks require CCS to be running; syntax/docs checks run without secrets.</text>
+</svg>

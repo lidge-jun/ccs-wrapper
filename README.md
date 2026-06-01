@@ -1,6 +1,33 @@
 # CCS Thinking Wrapper
 
+[![CI](https://github.com/lidge-jun/ccs-wrapper/actions/workflows/ci.yml/badge.svg)](https://github.com/lidge-jun/ccs-wrapper/actions/workflows/ci.yml)
+[![Pages](https://github.com/lidge-jun/ccs-wrapper/actions/workflows/pages.yml/badge.svg)](https://github.com/lidge-jun/ccs-wrapper/actions/workflows/pages.yml)
+![Python](https://img.shields.io/badge/python-3.x-111827)
+![License pending](https://img.shields.io/badge/license-pending-6b7280)
+
 [CCS(Claude Code Switch)](https://github.com/kaitranntt/ccs) 위에 얹는 프록시 래퍼. Claude Code CLI와 VS Code Copilot BYOK가 thinking/effort 모델을 투명하게 사용할 수 있게 해준다.
+
+## 공개 표면
+
+| 항목 | 현재 상태 |
+| --- | --- |
+| 저장소 | 공개 repo, GitHub 기준 4 stars / 0 forks |
+| 런타임 | Python 단일 파일 FastAPI 프록시 |
+| 엔드포인트 | `/v1/messages`, `/v1/chat/completions`, `/v1/models`, `/health` |
+| 기본 포트 | wrapper `localhost:8318`, upstream CCS `localhost:8317` |
+| 의존성 | `fastapi`, `uvicorn`, `httpx` |
+| GitHub Pages | `/docs` 기준 준비됨. 활성 배포는 authorized push 이후 가능 |
+| CI | `.github/workflows/ci.yml` 기준 Python syntax/docs 검증 준비 |
+| 라이선스 | root `LICENSE` 파일 없음. 사용 전 명시 라이선스 추가 필요 |
+
+## 빠른 검증
+
+```bash
+python3 -m py_compile thinking-wrapper.py
+python3 thinking-wrapper.py --help
+```
+
+`/health`까지 확인하려면 먼저 CCS가 `localhost:8317`에서 실행 중이어야 한다.
 
 ## 왜 필요한가
 
@@ -488,4 +515,4 @@ INFO:     127.0.0.1:55481 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
 
 ## 라이선스
 
-MIT
+현재 저장소에는 root `LICENSE` 파일이 없다. 기존 README는 MIT 의도를 적고 있었지만, GitHub는 라이선스를 감지하지 못한다. 재배포/외부 사용 전에 명시적인 `LICENSE` 파일을 추가해야 한다.
